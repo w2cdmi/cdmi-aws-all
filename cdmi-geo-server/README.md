@@ -1,1 +1,0 @@
-#cdmi-geo-server
