@@ -1,0 +1,159 @@
+.page {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.panel-hd {
+  background: #fff;
+}
+
+.panel-bd {
+  background: #fff;
+}
+
+.panel-row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 10rpx 0rpx;
+  border-bottom: 2rpx solid #e5e5e5;
+}
+
+.panel-row last-child {
+  border-bottom: 0rpx;
+}
+
+.panel-column {
+  width: 100%;
+  padding: 20rpx 0rpx;
+}
+
+.panel-column:first-child {
+  padding-left: 20rpx;
+}
+
+.panel-column:last-child {
+  padding-right: 20rpx;
+}
+
+.context-box {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 20rpx 40rpx;
+  line-height: 1.6;
+  width: auto;
+}
+
+.context-box context-box-title {
+  text-align: left;
+}
+
+.context-box context-box-brief {
+  text-align: left;
+}
+
+.context-box context-box-text {
+  text-align: left;
+}
+
+.text-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-box .text-box-icon {
+  width: 32rpx;
+  height: 32rpx;
+  text-align: center;
+}
+
+.text-box .text-box-title {
+  font-size: 28rpx;
+  font-weight: 400;
+  text-align: left;
+  padding: 0rpx 20rpx;
+}
+
+.text-box .text-box-action {
+}
+
+.panel-row .arrow-image {
+  height: 18rpx;
+  margin: 0 30rpx 0 20rpx;
+}
+
+.panel-column .text-box-action .text {
+  color: #333;
+  font-size: 26rpx;
+}
+
+.media-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.media-box .media-box-thumb {
+  width: 98rpx;
+  height: 98rpx;
+  text-align: center;
+}
+
+.media-box .media-box-title {
+  font-size: 28rpx;
+  font-weight: 400;
+  width: auto;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: break-word;
+  word-break: break-all;
+  padding: 0rpx 20rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.media-box .media-box-desc {
+  color: #808080;
+  font-size: 24rpx;
+  line-height: 1.6;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0rpx 20rpx;
+  padding-top: 10rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-button {
+  margin-top: 60rpx;
+  color: #fff;
+  background-color: red;
+  border: 4rpx solid red;
+  border-radius: 8rpx;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  font-size: 28rpx;
+  text-align: center;
+  width: 40%;
+  height: 70rpx;
+  line-height: 70rpx;
+}
+
+/* .row-noborder {
+  border-bottom: 0rpx solid #e5e5e5;
+}
+
+.row-border {
+  border-bottom: 1rpx solid #e5e5e5;
+}
+
+.row-edge-distance {
+  width: 10rpx;
+  padding: 20rpx 0rpx;
+} */

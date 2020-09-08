@@ -1,0 +1,70 @@
+<!--csc/me/me.wxml-->
+<view class='page'>
+  <view class="panel-bd">
+    <view class="panel-row media-box">
+      <view class="panel-column media-box-thumb person-item">
+        <view class='avatar' style="background-image:url({{avatarUrl}})"></view>
+      </view>
+      <view class='panel-column'>
+        <view class="media-box-title">
+          <label>nick</label>
+          <label>(正常)</label>
+        </view>
+        <view class="media-box-desc">
+          <label>我很拉风的</label>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="panel-hd panel-message-pipeline">
+    <view class="panel-row">
+      <view class="panel-column text-box">
+        <view class="text-box-title">
+          添加客服渠道
+        </view>
+        <view class="text-box-action">
+          新增
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="panel-bd">
+    <view class="panel-row">
+      <view class="panel-column text-box">
+        <view class="text-box-title">
+          小程序：文件宝
+        </view>
+      </view>
+    </view>
+    <view class="panel-row">
+      <view class="panel-column text-box">
+        <view class="text-box-title">
+          小程序：企业文件宝
+        </view>
+      </view>
+    </view>
+    <view class="panel-row">
+      <view class="panel-column text-box">
+        <view class="text-box-title">
+          公众号：企业文件宝
+        </view>
+      </view>
+    </view>
+    <view class="panel-row">
+      <view class="panel-column text-box">
+        <view class="text-box-title">
+          小程序：百度文库
+        </view>
+      </view>
+    </view>           
+  </view>
+  <view class="panel-bd panel-message-pipeline">
+    <view class="panel-row">
+      <view class="panel-column text-box">
+        <view class="text-box-title">
+          绑定指南
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

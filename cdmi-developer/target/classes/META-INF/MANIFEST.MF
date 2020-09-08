@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: developer
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: No.11
+Implementation-Vendor-Id: pw.cdmi.paas
+Build-Jdk: 1.8.0_151
+Implementation-URL: http://projects.spring.io/spring-boot/developer/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+

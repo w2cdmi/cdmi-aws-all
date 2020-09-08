@@ -1,0 +1,27 @@
+<!--components/searchbar/searchbar.wxml-->
+<view class="search-bar-container">
+  <view class="search-bar-form">
+    <view class="search-bar-box">
+      <icon class="icon-search-in-box" size='14' type='search'></icon>
+      <input bindconfirm='searchRequst' bindfocus='showSearchPage' bindinput='inputTyping' class="search-bar-text" placeholder='请输入要搜索的内容' placeholder-style='color:rgba(3,3,3,0.4);font-size:13px' type='text' value=''>
+      </input>
+    </view>
+  </view>
+  <image catchtap='changeSort' class="sort-btn" src="../images/sort.png" wx:if="{{isShowSort=='true' ? true:false}}"></image>
+  <image catchtap='changeViewStyle' class="viewstyle-btn" src="../images/sort.png" wx:if="{{isShowViewStyle=='true' ?true:false}}"></image>
+  <text catchtap='cancelSearch' class='sort-btn' hidden='' style='width:30px;'></text>
+</view>
+<view class="sort-popup-menu" id="_searchbar_sort_container">
+  <view class="sort-arrow">
+  </view>
+  <view class="sort-menu">
+    <view catchtap='sortBytyles' data-types="0">
+      <text class="sort-text" id="orderFild_modifiedAt">创建时间</text>
+      <image class="sort-img desc-sorting" src="../images/sorting.png"></image>
+    </view>
+    <view catchtap='sortBytyles' data-types="1">
+      <text class="sort-text" id="orderFild_name">文件名</text>
+      <image class="sort-img desc-sorting" src="../images/sorting.png"></image>
+    </view>
+  </view>
+</view>

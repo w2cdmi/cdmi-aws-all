@@ -1,0 +1,51 @@
+spring:
+  application:
+    name: cdmi-demo-api
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF8&useSSL=true
+    username: root
+    password: root
+    driverClassName: com.mysql.jdbc.Driver
+  druid:
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 60000
+    validationQuery: SELECT 1
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxPoolPreparedStatementPerConnectionSize: 20
+    filters: stat,wall,log4j
+#  redis:
+#    database: 0
+#    host: localhost
+#    port: 6379
+#    password: 123
+#    ssl: false
+#    timeout: 0
+#    pool:
+#      max-active: 8
+#      max-wait: -1
+#      max-idle: 8
+#      min-idle: 0
+#  data:
+#    mongodb:
+#      uri: mongodb://test:123@localhost:27017/test
+#  rabbitmq:
+#    host: localhost
+#    port: 5672
+#    username: root
+#    password: 123
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  messages:
+    basename:message
+    encoding:UTF-8   
+server:
+  port: 8888

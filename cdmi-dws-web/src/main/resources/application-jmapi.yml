@@ -1,0 +1,38 @@
+#web
+server:
+  port: 8085
+
+#
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.1.12:3306/msm?useUnicode=true&characterEncoding=UTF8&autoReconnect=true&socketTimeout=1800000&useSSL=false
+    username: db_user
+    password: ENC(d2NjX2NyeXB0ATQxNDU1MzVGNDM0MjQzOzMzMzM0NDMyMzM0MzMwNDY0MzM3MzUzMjQxMzczNTQyNDUzMTMyNDQ0NjQ2MzkzNjQxMzAzOTMyMzYzODM0Mzc7OzM1MzAzMDMwMzA7NzM5NkE3NkQyODQ4RkY5RjQ1MDYxQTg0QzczMTlGMjc7RTU2ODA0NTgxMjJGNzQzNDs,d2NjX2NyeXB0ATQxNDU1MzVGNDM0MjQzOzQyNDQ0MzMzMzkzMDMxNDE0NDMyNDUzNDMyMzYzMzM2MzIzMDM5NDQzODM0NDUzMjM4NDQzODM2MzczMjM1MzUzMDM1MzM0MzMwMzUzMTQyMzUzMzMyNDUzMjM3MzAzNDM0NDYzMDMwMzQ0MTQ0NDIzMjQzMzQ0MzQ2MzU0NTMzMzI0NTM0Mzg0MzM2NDE0NTM3NDYzODQxNDYzMDQ1MzU0MjM0MzUzMDMwMzczMzQ0Mzg0NjQxNDMzNzM5NDU0MTszMTM1MzAzMTM1MzczNDMyMzgzMzM5MzQzMjszNTMwMzAzMDMwO0RBOUE1OEY2RDY5Q0Q3MjlEOTRCMzYyNDk0NDNCOTQ4Ow)
+    driverClassName: com.mysql.jdbc.Driver
+    connectionInitSqls: "SET NAMES utf8mb4 COLLATE utf8mb4_unicode_ci;"
+
+cache:
+  supported: true
+  
+  servers: 192.168.1.12;
+#    -172.16.16.101
+#    -172.16.16.102
+#    -172.16.16.103
+  port: 11211
+  
+  pool:
+    name: sms_cache
+    maxConnections: 50
+    socketTimeout: 2000
+    socketConnectTimeout: 60000
+    timeout: 600000
+    prefix: sms
+    binaryProtocal: true
+    aliveCheck: false
+    failback: true
+    failover: true
+    opTimeout: 30000      
+#配置日志
+logging:
+  #配置日志文件路径
+  config: classpath:logback-spring-prod.xml

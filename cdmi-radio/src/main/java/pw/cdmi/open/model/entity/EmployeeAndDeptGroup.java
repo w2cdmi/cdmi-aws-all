@@ -1,0 +1,30 @@
+package pw.cdmi.open.model.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.Data;
+
+/************************************************************
+ * 部门群组与员工的关联对象
+ * 
+ * @author 佘朝军
+ * @version iSoc Service Platform, 2015-5-6
+ ************************************************************/
+@Data
+@Entity
+@Table(name = "ept_employee_and_dept_group")
+public class EmployeeAndDeptGroup {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private String id;					// 部门群组与员工的关联对象编号
+
+    private String employeeId;			// 员工编号
+
+    private String deptGroupId;		// 部门群组编号
+
+}

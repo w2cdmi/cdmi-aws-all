@@ -1,0 +1,126 @@
+Manifest-Version: 1.0
+Implementation-Title: radio
+Implementation-Version: 1.0.0
+Built-By: No.11
+Implementation-Vendor-Id: pw.cdmi
+Class-Path: . ./lib/cse-solution-service-engine-2.2.28.jar ./lib/found
+ ation-auth-2.2.28.jar ./lib/foundation-common-0.5.0.B002.jar ./lib/ja
+ ckson-dataformat-xml-2.8.10.jar ./lib/woodstox-core-5.0.3.jar ./lib/l
+ og4j-1.2.17.jar ./lib/foundation-ssl-0.5.0.B002.jar ./lib/commons-con
+ figuration-1.10.jar ./lib/foundation-config-0.5.0.B002.jar ./lib/nett
+ y-codec-4.1.5.Final.jar ./lib/netty-codec-http-4.1.5.Final.jar ./lib/
+ netty-codec-http2-4.1.5.Final.jar ./lib/netty-common-4.1.5.Final.jar 
+ ./lib/netty-handler-4.1.5.Final.jar ./lib/netty-buffer-4.1.5.Final.ja
+ r ./lib/netty-codec-socks-4.1.5.Final.jar ./lib/netty-handler-proxy-4
+ .1.5.Final.jar ./lib/netty-resolver-4.1.5.Final.jar ./lib/netty-trans
+ port-4.1.5.Final.jar ./lib/slf4j-log4j12-1.7.25.jar ./lib/foundation-
+ config-cc-2.2.28.jar ./lib/foundation-vertx-0.5.0.B002.jar ./lib/vert
+ x-core-3.5.0.jar ./lib/netty-resolver-dns-4.1.5.Final.jar ./lib/netty
+ -codec-dns-4.1.5.Final.jar ./lib/vertx-web-3.5.0.jar ./lib/vertx-auth
+ -common-3.5.0.jar ./lib/vertx-bridge-common-3.5.0.jar ./lib/transport
+ -highway-0.5.0.B002.jar ./lib/java-chassis-core-0.5.0.B002.jar ./lib/
+ service-registry-0.5.0.B002.jar ./lib/swagger-invocation-core-0.5.0.B
+ 002.jar ./lib/common-protobuf-0.5.0.B002.jar ./lib/protostuff-core-1.
+ 5.2.jar ./lib/protostuff-api-1.5.2.jar ./lib/protostuff-runtime-1.5.2
+ .jar ./lib/protostuff-collectionschema-1.5.2.jar ./lib/jackson-datafo
+ rmat-protobuf-2.8.10.jar ./lib/protoparser-4.0.3.jar ./lib/common-jav
+ assist-0.5.0.B002.jar ./lib/foundation-metrics-0.5.0.B002.jar ./lib/s
+ ervo-core-0.10.1.jar ./lib/annotations-2.0.0.jar ./lib/servo-internal
+ -0.10.1.jar ./lib/transport-rest-vertx-0.5.0.B002.jar ./lib/transport
+ -rest-client-0.5.0.B002.jar ./lib/common-rest-0.5.0.B002.jar ./lib/tr
+ ansport-rest-servlet-0.5.0.B002.jar ./lib/javax.servlet-api-3.1.0.jar
+  ./lib/provider-springmvc-0.5.0.B002.jar ./lib/provider-rest-common-0
+ .5.0.B002.jar ./lib/swagger-invocation-springmvc-0.5.0.B002.jar ./lib
+ /swagger-generator-springmvc-0.5.0.B002.jar ./lib/swagger-generator-c
+ ore-0.5.0.B002.jar ./lib/swagger-core-1.5.12.jar ./lib/jackson-datafo
+ rmat-yaml-2.8.10.jar ./lib/swagger-models-1.5.12.jar ./lib/swagger-an
+ notations-1.5.12.jar ./lib/provider-pojo-0.5.0.B002.jar ./lib/provide
+ r-jaxrs-0.5.0.B002.jar ./lib/swagger-invocation-jaxrs-0.5.0.B002.jar 
+ ./lib/swagger-generator-jaxrs-0.5.0.B002.jar ./lib/handler-flowcontro
+ l-qps-0.5.0.B002.jar ./lib/handler-bizkeeper-0.5.0.B002.jar ./lib/hys
+ trix-core-1.5.10.jar ./lib/HdrHistogram-2.1.9.jar ./lib/handler-loadb
+ alance-0.5.0.B002.jar ./lib/ribbon-2.2.2.jar ./lib/ribbon-transport-2
+ .2.2.jar ./lib/rxnetty-contexts-0.4.9.jar ./lib/rxnetty-servo-0.4.9.j
+ ar ./lib/rxnetty-0.4.9.jar ./lib/ribbon-loadbalancer-2.2.2.jar ./lib/
+ netflix-statistics-0.1.1.jar ./lib/netflix-commons-util-0.1.1.jar ./l
+ ib/ribbon-core-2.2.2.jar ./lib/archaius-core-0.7.3.jar ./lib/jsr305-3
+ .0.1.jar ./lib/rxjava-1.1.6.jar ./lib/cse-handler-cloud-extension-2.2
+ .28.jar ./lib/cse-handler-performance-stats-2.2.28.jar ./lib/cse-hand
+ ler-tcc-2.2.28.jar ./lib/aspectjweaver-1.8.13.jar ./lib/cdmi-core-htt
+ p-3.0.1-SNAPSHOT.jar ./lib/cdmi-core-3.0.1-SNAPSHOT.jar ./lib/mysql-c
+ onnector-java-5.1.44.jar ./lib/c3p0-0.9.1.2.jar ./lib/commons-lang3-3
+ .3.2.jar ./lib/logback-classic-1.1.11.jar ./lib/logback-core-1.1.11.j
+ ar ./lib/logback-ext-spring-0.1.4.jar ./lib/stax2-api-3.1.4.jar ./lib
+ /snmp4j-1.10.1.jar ./lib/curator-framework-2.11.1.jar ./lib/curator-c
+ lient-2.11.1.jar ./lib/curator-recipes-2.10.0.jar ./lib/wcc_crypt-3.5
+ .2.RELEASE.jar ./lib/jstl-1.2.jar ./lib/commons-beanutils-1.9.3.jar .
+ /lib/commons-collections-3.2.2.jar ./lib/commons-codec-1.10.jar ./lib
+ /commons-fileupload-1.3.1.jar ./lib/commons-io-2.4.jar ./lib/commons-
+ lang-2.6.jar ./lib/commons-cli-1.2.jar ./lib/spring-orm-4.3.7.RELEASE
+ .jar ./lib/spring-tx-4.3.5.RELEASE.jar ./lib/spring-web-4.3.5.RELEASE
+ .jar ./lib/spring-core-4.3.13.RELEASE.jar ./lib/spring-aop-4.3.5.RELE
+ ASE.jar ./lib/spring-beans-4.3.5.RELEASE.jar ./lib/spring-webmvc-4.3.
+ 5.RELEASE.jar ./lib/spring-expression-4.3.5.RELEASE.jar ./lib/spring-
+ context-4.3.5.RELEASE.jar ./lib/spring-context-support-4.3.7.RELEASE.
+ jar ./lib/spring-test-4.3.7.RELEASE.jar ./lib/spring-security-web-4.1
+ .4.RELEASE.jar ./lib/aopalliance-1.0.jar ./lib/spring-security-core-4
+ .1.4.RELEASE.jar ./lib/spring-security-config-4.1.4.RELEASE.jar ./lib
+ /spring-security-acl-4.1.4.RELEASE.jar ./lib/spring-security-taglibs-
+ 4.1.4.RELEASE.jar ./lib/spring-data-mongodb-1.9.8.RELEASE.jar ./lib/s
+ pring-data-commons-1.12.8.RELEASE.jar ./lib/slf4j-api-1.7.25.jar ./li
+ b/jcl-over-slf4j-1.7.25.jar ./lib/javax.inject-1.jar ./lib/jboss-tran
+ saction-api_1.2_spec-1.0.0.Final.jar ./lib/jbossjta-4.16.6.Final.jar 
+ ./lib/javax.ws.rs-api-2.0.1.jar ./lib/httpcore-4.4.8.jar ./lib/httpcl
+ ient-4.5.3.jar ./lib/axis-1.4.jar ./lib/axis-jaxrpc-1.4.jar ./lib/cxf
+ -rt-frontend-jaxws-3.1.6.jar ./lib/xml-resolver-1.2.jar ./lib/asm-5.0
+ .4.jar ./lib/cxf-core-3.1.6.jar ./lib/xmlschema-core-2.2.1.jar ./lib/
+ cxf-rt-bindings-soap-3.1.6.jar ./lib/cxf-rt-wsdl-3.1.6.jar ./lib/cxf-
+ rt-databinding-jaxb-3.1.6.jar ./lib/jaxb-impl-2.2.11.jar ./lib/jaxb-c
+ ore-2.2.11.jar ./lib/cxf-rt-bindings-xml-3.1.6.jar ./lib/cxf-rt-front
+ end-simple-3.1.6.jar ./lib/cxf-rt-ws-addr-3.1.6.jar ./lib/cxf-rt-ws-p
+ olicy-3.1.6.jar ./lib/neethi-3.0.3.jar ./lib/jackson-jaxrs-json-provi
+ der-2.8.7.jar ./lib/jackson-jaxrs-base-2.8.7.jar ./lib/jackson-module
+ -jaxb-annotations-2.8.7.jar ./lib/jettison-1.3.8.jar ./lib/stax-api-1
+ .0.1.jar ./lib/jackson-core-2.8.10.jar ./lib/jackson-databind-2.8.10.
+ jar ./lib/jackson-annotations-2.8.10.jar ./lib/json-lib-2.4-jdk15.jar
+  ./lib/commons-logging-1.2.jar ./lib/ezmorph-1.0.6.jar ./lib/cxf-rt-r
+ s-security-cors-3.1.6.jar ./lib/cxf-rt-frontend-jaxrs-3.1.6.jar ./lib
+ /javax.annotation-api-1.2.jar ./lib/cxf-rt-transports-http-3.1.6.jar 
+ ./lib/wsdl4j-1.6.3.jar ./lib/xml-apis-1.4.01.jar ./lib/xstream-1.4.9.
+ jar ./lib/xmlpull-1.1.3.1.jar ./lib/xpp3_min-1.1.4c.jar ./lib/jdom-1.
+ 1.jar ./lib/guava-16.0.1.jar ./lib/jmagick-6.6.9.jar ./lib/lombok-1.1
+ 6.8.jar ./lib/spring-boot-starter-web-1.5.9.RELEASE.jar ./lib/spring-
+ boot-starter-1.5.9.RELEASE.jar ./lib/spring-boot-1.5.9.RELEASE.jar ./
+ lib/spring-boot-autoconfigure-1.5.9.RELEASE.jar ./lib/spring-boot-sta
+ rter-logging-1.5.9.RELEASE.jar ./lib/jul-to-slf4j-1.7.25.jar ./lib/lo
+ g4j-over-slf4j-1.7.25.jar ./lib/snakeyaml-1.17.jar ./lib/spring-boot-
+ starter-tomcat-1.5.9.RELEASE.jar ./lib/tomcat-embed-core-8.5.23.jar .
+ /lib/tomcat-annotations-api-8.5.23.jar ./lib/tomcat-embed-el-8.5.23.j
+ ar ./lib/tomcat-embed-websocket-8.5.23.jar ./lib/hibernate-validator-
+ 5.3.6.Final.jar ./lib/validation-api-1.1.0.Final.jar ./lib/jboss-logg
+ ing-3.3.1.Final.jar ./lib/classmate-1.3.4.jar ./lib/spring-boot-start
+ er-data-redis-1.5.9.RELEASE.jar ./lib/spring-data-redis-1.7.8.RELEASE
+ .jar ./lib/spring-data-keyvalue-1.1.8.RELEASE.jar ./lib/spring-oxm-4.
+ 3.7.RELEASE.jar ./lib/jedis-2.9.0.jar ./lib/commons-pool2-2.4.3.jar .
+ /lib/spring-boot-starter-data-jpa-1.5.9.RELEASE.jar ./lib/spring-boot
+ -starter-aop-1.5.9.RELEASE.jar ./lib/spring-boot-starter-jdbc-1.5.9.R
+ ELEASE.jar ./lib/tomcat-jdbc-8.5.23.jar ./lib/tomcat-juli-8.5.23.jar 
+ ./lib/hibernate-core-5.0.12.Final.jar ./lib/javassist-3.21.0-GA.jar .
+ /lib/antlr-2.7.7.jar ./lib/jandex-2.0.0.Final.jar ./lib/dom4j-1.6.1.j
+ ar ./lib/hibernate-entitymanager-5.0.12.Final.jar ./lib/javax.transac
+ tion-api-1.2.jar ./lib/spring-data-jpa-1.10.8.RELEASE.jar ./lib/sprin
+ g-aspects-4.3.5.RELEASE.jar ./lib/mail-1.4.7.jar ./lib/activation-1.1
+ .jar ./lib/geronimo-javamail_1.4_spec-1.7.1.jar ./lib/hibernate-ogm-m
+ ongodb-5.1.0.Final.jar ./lib/hibernate-ogm-core-5.1.0.Final.jar ./lib
+ /hibernate-commons-annotations-5.0.1.Final.jar ./lib/hibernate-hql-pa
+ rser-1.4.0.Final.jar ./lib/antlr-runtime-3.4.jar ./lib/stringtemplate
+ -3.2.1.jar ./lib/mongo-java-driver-3.4.3.jar ./lib/parboiled-java-1.1
+ .7.jar ./lib/parboiled-core-1.1.7.jar ./lib/asm-tree-5.0.3.jar ./lib/
+ asm-analysis-5.0.3.jar ./lib/asm-util-5.0.3.jar ./lib/hibernate-jpa-2
+ .1-api-1.0.0.Final.jar
+Build-Jdk: 1.8.0_151
+Implementation-URL: http://maven.apache.org
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+Main-Class: pw.cdmi.radio.RadioApplication
+

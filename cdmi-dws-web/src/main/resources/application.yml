@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: cdmi-dws-service
+  profiles:
+    active: @profileActive@
+  jpa:
+    properties:
+      hibernate:
+        dialect: pw.cdmi.config.MySQL5InnoDBDialectUtf8mb4
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+MessageTemplates:
+  templates:
+    default: 你的验证码为：
+    

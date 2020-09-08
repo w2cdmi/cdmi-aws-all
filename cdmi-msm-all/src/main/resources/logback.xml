@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<contextListener class="ch.qos.logback.classic.jul.LevelChangePropagator">
+		<resetJUL>true</resetJUL>
+    </contextListener>
+    
+	<appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>[%d{yyyy-MM-dd HH:mm:ss.SSS}][msm][%X{LogID}][%-5level][%C][%M,%L][%msg][%thread]%n</pattern>
+		</encoder>
+	</appender>
+
+	<appender name="rollingFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${catalina.base}/logs/msm.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<FileNamePattern>${catalina.base}/logs/msm.%d{yyyy-MM-dd}-%i.log.zip</FileNamePattern> 
+			<MaxHistory>90</MaxHistory> 
+			<TimeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<MaxFileSize>300MB</MaxFileSize> 
+			</TimeBasedFileNamingAndTriggeringPolicy>
+  		</rollingPolicy>
+  		<encoder>
+  			<pattern>[%d{yyyy-MM-dd HH:mm:ss.SSS}][msm][%X{LogID}][%-5level][%C][%M,%L][%msg][%thread]%n</pattern> 
+  		</encoder>
+	</appender>
+	
+	<appender name="rollingFile_sql" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${catalina.base}/logs/msm_sql.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<FileNamePattern>${catalina.base}/logs/msm_sql.%d{yyyy-MM-dd}-%i.log.zip</FileNamePattern> 
+			<MaxHistory>90</MaxHistory> 
+			<TimeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<MaxFileSize>300MB</MaxFileSize> 
+			</TimeBasedFileNamingAndTriggeringPolicy>
+  		</rollingPolicy>
+  		<encoder>
+  			<pattern>[%d{yyyy-MM-dd HH:mm:ss.SSS}][msm][%X{LogID}][%-5level][%L][%msg][%thread]%n</pattern> 
+  		</encoder>
+	</appender>
+	
+	<appender name="rollingFile_slowRequest" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${catalina.base}/logs/msm_slow_request.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<FileNamePattern>${catalina.base}/logs/msm_slow_request.%d{yyyy-MM-dd}-%i.log.zip</FileNamePattern> 
+			<MaxHistory>5</MaxHistory> 
+			<TimeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<MaxFileSize>300MB</MaxFileSize> 
+			</TimeBasedFileNamingAndTriggeringPolicy>
+  		</rollingPolicy>
+  		<encoder>
+  			<pattern>[%d{yyyy-MM-dd HH:mm:ss.SSS}][msm][%X{LogID}][%-5level][%L][%msg][%thread]%n</pattern> 
+  		</encoder>
+	</appender>
+	
+
+	<!-- project default level -->
+	<logger name="pw.cdmi.paas" level="INFO" />
+
+	<!--log4jdbc -->
+	<logger name="jdbc.sqltiming" level="INFO"/>
+	
+	<logger name="com.alibaba.cobar" level="WARN" />
+
+	<logger name="org.apache.thrift.server.AbstractNonblockingServer" level="ERROR" /> 
+    
+	<root level="INFO">
+		<!-- <appender-ref ref="rollingFile" /> -->
+		<appender-ref ref="console" />
+	</root>
+</configuration>

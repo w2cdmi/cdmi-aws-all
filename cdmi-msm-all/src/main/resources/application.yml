@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: cdmi-msm-api
+  datasource:
+    url: jdbc:mysql://localhost:3306/cdmi-msm?useUnicode=true&characterEncoding=UTF8&useSSL=true
+    username: root
+    password: root
+    driverClassName: com.mysql.jdbc.Driver
+  druid:
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 60000
+    validationQuery: SELECT 1
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxPoolPreparedStatementPerConnectionSize: 20
+    filters: stat,wall,log4j
+  data:
+    mongodb:
+      uri: mongodb://cdmi-msm-user:cdmi-filepro@localhost:27017/test
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      security:  
+  oauth2:  
+    client:  
+      client-id: VaAykBZSIK33tD1yRK3XoPtx  
+      client-secret: FgL5vYi1Fs11IprXB8LprHIv4fslTqsC  
+      access-token-uri: http://openapi.baidu.com/oauth/2.0/token  
+      user-authorization-uri: http://openapi.baidu.com/oauth/2.0/authorize  
+    resource:  
+      userInfoUri: https://openapi.baidu.com/rest/2.0/passport/users/getInfo  
+server:
+  port: 8888

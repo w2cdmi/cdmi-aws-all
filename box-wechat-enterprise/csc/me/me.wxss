@@ -1,0 +1,12 @@
+@import "/weui.wxss";
+
+.avatar {
+  height: 90rpx;
+  width: 90rpx;
+  background-size: 90rpx 90rpx;
+  border-radius: 50%;
+}
+
+.panel-message-pipeline {
+  margin-top:30rpx;
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<!-- 此文件主要用于屏蔽classpath中jar自带的logback.xml，多环境下的log配置在logbakc-spring-*.xml -->
+<!-- 在SpringBoot中不建议使用logback.xml, 因为此文件加载非常早，导致配置文件中springboot标签不能被识别，灵活度不够 -->
+<configuration>
+    <!-- 控制台输出 -->
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符 -->
+            <pattern>[%d{yyyy-MM-dd HH:mm:ss.SSS}][msm][%X{LogID}][%-5level][%C][%M,%L][%msg][%thread]%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="rollingFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>logs/msm.%d{yyyy-MM-dd}-%i.log.zip</FileNamePattern>
+            <MaxHistory>90</MaxHistory>
+            <TimeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <MaxFileSize>300MB</MaxFileSize>
+            </TimeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+        <encoder>
+            <pattern>[%d{yyyy-MM-dd HH:mm:ss.SSS}][msm][%X{LogID}][%-5level][%C][%M,%L][%msg][%thread]%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- 可以指定包或者类 -->
+    <logger name="pw.cdmi" level="WARN">
+        <appender-ref ref="console"/>
+    </logger>
+
+    <root level="ERROR">
+        <appender-ref ref="console" />
+    </root>
+</configuration>

@@ -1,0 +1,16 @@
+.Massage_table table th {
+  background: #fff !important;
+}
+.Massage_table table th:nth-child(2) {
+  width: 60px;
+}
+.Massage_table table th:nth-child(2) span {
+  width: 40px;
+  font-size: 14px;
+  padding-right: 10px;
+  border-right: 2px solid red !important;
+  color: #a79f9f;
+}
+.Massage_table table tr i {
+  cursor: pointer;
+}

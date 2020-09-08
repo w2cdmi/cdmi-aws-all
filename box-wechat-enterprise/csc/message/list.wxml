@@ -1,0 +1,20 @@
+<!--csc/message/list.wxml-->
+<view class="page">
+  <view class="panel-bd">
+    <view class="panel-row media-box" wx:for="{{conversations}}">
+      <view class="panel-column media-box-thumb">
+        <image src='/disk/images/teamfile.png' class='media-box-thumb'></image>
+      </view>
+      <view class="panel-column">
+        <view class="media-box-title">
+          <view>{{item.username}}</view>
+          <view>来自:{{item.from}}</view>
+        </view>
+        <view class="media-box-desc">
+          <text>{{item.message}}</text>
+          <view>下午 5：19</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

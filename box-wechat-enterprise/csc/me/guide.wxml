@@ -1,0 +1,28 @@
+<!--csc/me/guide.wxml-->
+<view class='page'>
+  <view class="panel-bd ">
+    <view class="panel-row context-box">
+      <text class="context-box-title">
+        客服消息管家：
+      </text>
+      <text class="context-box-brief">
+        旨在为拥有微信公众号，小程序的服务提供者提供一个快捷一致的客服消息通知和统一回复的小工具。
+      </text>
+      <text class="context-box-text">
+        该小程序解决了以下问题： 
+        1. 微信的公众号，小程序中的客服消息收取必须在电脑端获取并进行客户回复。不支持移动端及时收取与回复。 
+        2. 加强服务提供商客服与服务使用者之间的便捷沟通。 
+        
+        如何绑定： 
+        请登陆您的微信公众号，在开发->基础配置页面中启用服务器配置： 
+
+        请将URL填写为：https://www.filepro.cn/dac/event/callback. 
+        将消息加解密方式设置为： 安全模式（推荐） 
+        按照微信要求填写您自定义的Token以及生成您的EncodingAESKey。
+      </text>
+    </view>
+  </view>
+  <view class="page-button">
+    <lable>添加客服账号</lable>
+  </view>
+</view>

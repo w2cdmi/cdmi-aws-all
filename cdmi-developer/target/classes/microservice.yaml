@@ -1,0 +1,32 @@
+APPLICATION_ID: cdmi-developer-app
+service_description:
+  name: cdmi-developer-api
+  version: 0.0.1
+  properties:
+    allowCrossApp: false
+cse:
+  service:
+    registry:
+      address:  http://127.0.0.1:30100 #服务中心地址及端口
+      instance:
+        watch: false
+#  config:
+#    client:
+#      serverUri: https://cse.cn-north-1.myhwclouds.com:443
+#      refreshMode: 1
+#      refresh_interval: 5000
+#  monitor:
+#    client:
+#      serverUri: https://cse.cn-north-1.myhwclouds.com:443
+  rest:
+    address: 0.0.0.0:8080
+    
+    handler:
+      chain:
+        Provider:
+          default: bizkeeper-provider #调用的处理链
+          
+#  credentials:
+#    accessKey: 6JYWKEBE3HGV7BKZFNAE
+#    secretKey: QHBu8CTNRcDd9hAWpF9aClUarfU7WwCoeVG68HB1
+#    akskCustomCipher: default

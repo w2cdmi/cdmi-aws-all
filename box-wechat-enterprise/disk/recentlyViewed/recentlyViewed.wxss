@@ -1,0 +1,2 @@
+/* disk/recentlyViewed/recentlyViewed.wxss */
+@import "/disk/template/fileList.wxss"

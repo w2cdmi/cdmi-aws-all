@@ -1,0 +1,4 @@
+<!--disk/recentlyViewed/recentlyViewed.wxml-->
+<import src="/disk/template/fileList.wxml" />
+
+<template is="file-list" data="{{data,showShareBtn,isTouchMoveIndex,loadMoreIcon}}" />

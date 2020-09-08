@@ -1,0 +1,19 @@
+图片处理工具类：
+	ImageUtils:主要提供了图片的缩放，旋转，加边框，设置背景，提升质量，加盖文字等功能
+	
+类库备注：
+	图片处理主要是采用了ImageMagick, JMagick两个开源处理库。
+	在使用该类时，需要先安装ImageMagick, JMagick。
+	
+	请参看下面安装过程说明。
+	Window下面：
+	1. 安装ImageMagick（ImageMagick website:http://www.imagemagick.org/script/index.php）
+	    下载并安装ImageMagick。file name: ImageMagick-6.2.6-8-Q16-windows-dll.exe
+	     download address: http://prdownloads.sourceforge.net/imagemagick/ImageMagick-6.2.6-8-Q16-windows-dll.exe?download
+	    安装成功后，把install path加入系统path，以便能调用dll.如C:\Program Files\ImageMagick-6.2.6-Q16
+	2. 安装JMagick（JMagick website: http://www.yeo.id.au/jmagick/）
+	    下载JMatick。file name: jmagick-6.2.6-win.zip 
+	    download address: http://www.yeo.id.au/jmagick/quickload/win-6.2.6/jmagick-6.2.6-win.zip
+	    解压后把jmagick-6.2.6-win\jar\jmagick.jar copy到项目的WEB-INF\lib目录下，把jmagick-6.2.6-win\q16\jmagick.dll copy 到c:\windows\system32目录下。
+	    
+	Linux下面：

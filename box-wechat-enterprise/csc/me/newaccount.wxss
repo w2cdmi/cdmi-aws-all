@@ -1,0 +1,30 @@
+@import "/weui.wxss";
+
+.footer {
+  text-align: center;
+  padding-bottom: 20rpx;
+  margin-top: 60rpx;
+  font-size: 24rpx;
+}
+
+.footer view {
+  color: #666;
+  margin-top: 4rpx;
+}
+
+.footer .remarks {
+  margin-top: 40rpx;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 20rpx 100rpx;
+  line-height: 1.6;
+  width: auto;
+}
+
+.footer text {
+  font-size: 24rpx;
+  color: #666;
+  margin-top: 4rpx;
+  text-align: left;
+}

@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+        "createFolder": "/components/createFolder/createFolder"
+    }
+}

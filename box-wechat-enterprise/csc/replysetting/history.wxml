@@ -1,0 +1,13 @@
+<!--csc/replysetting/history.wxml-->
+<view class="page">
+  <view class="panel-bd">
+    <view class="panel-row text-box" wx:for="{{histories}}">
+      <view class="panel-column text-box-icon">
+        <view class="text-box-icon">{{index + 1}}</view>
+      </view>
+      <view class="panel-column">
+        <view class="text-box-title">{{item.message}}</view>
+      </view>
+    </view>
+  </view>
+</view>

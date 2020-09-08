@@ -1,0 +1,81 @@
+<!--csc/me/newaccount.wxml-->
+<view class='page'>
+  <view class="panel-bd">
+    <view class="panel-row">
+      <view class="panel-column text-box">
+        <view class="text-box-title">
+          应用类型：
+        </view>
+        <view class="text-box-title">
+          小程序
+        </view>
+      </view>
+    </view>
+    <view class="panel-row">
+      <view class="panel-column text-box">
+        <view class="text-box-title">
+          应用名称
+        </view>
+        <view class="text-box-title">
+          企业文件宝
+        </view>
+      </view>
+    </view>
+    <view class="panel-row">
+      <view class="panel-column text-box">
+        <view class="text-box-title">
+          消息接入URL:
+        </view>
+        <view class="text-box-title">
+          https://www.filepro.cn/wxevent/callback
+        </view>
+      </view>
+    </view>
+    <view class="panel-row">
+      <view class="panel-column text-box">
+        <view class="text-box-title">
+          消息加解密方式：
+        </view>
+        <view class="text-box-title">
+          安全模式（推荐）
+        </view>
+      </view>
+    </view>
+    <view class="panel-row">
+      <view class="panel-column text-box">
+        <view class="text-box-title">
+          自定义的Token：
+        </view>
+        <view class="text-box-title">
+          ACST89242GW@#WDSsdtTW
+        </view>
+      </view>
+    </view>
+    <view class="panel-row">
+      <view class="panel-column text-box">
+        <view class="text-box-title">
+          EncodingAESKey：
+        </view>
+        <text class="text-box-title">
+          ACST89242GW@#WDSsdtTWACST89242GW@#WDSsdtTWACST89242GW@#WDSsdtTW
+        </text>
+      </view>
+    </view>
+  </view>
+  <view class="page-button">
+    <lable>开始测试</lable>
+  </view>
+  <view class="footer">
+    <view>说明：修改信息而不执行测试将会导致账号无法使用</view>
+    <view class="remarks">
+      <text>以下原因可能导致您无法绑定您的客服账号：</text>
+      <text>1. 您尚未在您的微信公众号或小程序中启用服务器配置
+          2. 在服务器配置中未能添加正确的URL，
+              该URL为Https://www.filepro.cn/wxevent/callback
+          3. 在服务器配置中未添加自定义Token或EncodingAESKey
+          4. 该处配置的自定义Token以及EncodingAESKey与微信公众号或小程序中的放服务器配置信息不符
+          5. 应用类型选择错误或消息加密方式选择错误
+      </text>
+    </view>
+  </view>
+</view>

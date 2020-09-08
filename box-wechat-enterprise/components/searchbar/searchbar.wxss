@@ -1,0 +1,98 @@
+/* components/searchbar/searchbar.wxss */
+
+.search-bar-container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.search-bar-form {
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+  flex: auto;
+  border-radius: 5px;
+  background: transparent;
+}
+
+.search-bar-box {
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+  border-radius: 59px;
+  overflow: hidden;
+  background-color: #fff;
+  float: left;
+}
+
+.icon-search-in-box {
+  position: absolute;
+  left: 10px;
+  top: 7px;
+}
+
+.search-bar-text {
+  height: 28px;
+  line-height: 28px;
+  font-size: 28rpx;
+}
+
+.search-bar .sort-btn {
+  margin-top: 3px;
+  padding-left: 10px;
+  font-size: 14px;
+  color: #ea5036;
+  width: 21px;
+  height: 20px;
+}
+
+.viewstyle-btn {
+  margin-top: 3px;
+  padding-left: 10px;
+  font-size: 14px;
+  color: #ea5036;
+  width: 21px;
+  height: 20px;
+}
+
+.sort-popup-menu {
+  width: 20rpx;
+  height: 20rpx;
+  display: inline-block;
+}
+
+.option-img {
+  width: 20rpx;
+  height: 20rpx;
+  display: inline-block;
+}
+.option-text{
+  padding:0;
+}
+
+.sort-arrow {
+  border: solid transparent;
+  border-bottom-color: #fff;
+  border-width: 12rpx;
+  border-top-width: 0;
+  background: Transparent;
+  left: 168rpx;
+  position: absolute;
+  top: -9rpx;
+}
+
+.sort-menu {
+  width: 91%;
+  line-height: 52rpx;
+  background-color: #fff;
+  box-shadow: 10rpx 10rpx 20rpx 1rpx rgba(3, 3, 3, 0.3);
+  border-radius: 0.5em;
+  padding: 17rpx;
+  height: 69%;
+}

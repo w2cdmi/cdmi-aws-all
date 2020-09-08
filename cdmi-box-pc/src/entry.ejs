@@ -1,0 +1,20 @@
+<% htmlWebpackPlugin.options.headScripts = htmlWebpackPlugin.options.headScripts || [] %>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="A admin dashboard application demo built upon Ant Design and Dva.js">
+  <title>wolf-ui</title>
+  <% for (item of htmlWebpackPlugin.options.headScripts) { %>
+    <script src="<%= item %>"></script>
+  <% } %>
+  <Link Rel="StyleSheet" Href="./style/style.css" Type="Text/Css">
+</head>
+
+<body>
+  <div id="root" style="position: absolute;left:0;top:0;right:0;bottom: 0; overflow: hidden;"></div>
+</body>
+</html>
